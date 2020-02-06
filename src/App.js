@@ -5,6 +5,7 @@ import TablaComponentesSimplesProps from "./tablaComponentesSimplesProps";
 import TablaComponentesSimplesState from "./tablaComponentesSimplesState.js";
 //import Personajes from "./personajes.json";
 import Formulario from './Formulario'
+import Api from "./Api"
 
 class App extends Component {
 
@@ -96,6 +97,9 @@ class App extends Component {
                 <TablaComponentesSimplesState datosPersonajes={personajes} borrarPersonaje={this.borrarPersonaje} />
                 <h2>Añadir nuevo</h2> 
                 <Formulario manejarEnvio={this.manejarEnvio} />
+                <h2>Datos de la API de Andreas Reiterer</h2> 
+                <h3>Lista de contactos:</h3> 
+                <Api />
 
             </div>
         )
